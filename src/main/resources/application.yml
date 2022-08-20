@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ratings-data-service
+server:
+  url: http://192.168.18.11
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${server.url}:${server.port}/eureka/
